@@ -13,25 +13,10 @@ a:visited{
     color:#777;
 }
 
-#header{
-    width:100%;
-    clear:both;
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
-    position:fixed;
-    left:0px;
-    top:0px;
-    z-index: 10;
-}
-
-.center{
-    margin: 0 auto;
-    width:960px;
-}
-
 .textCenter{
     text-align: center;
 }
+
 
 #headerName{
     background-color: #4aaaa5;
@@ -57,6 +42,22 @@ a:visited{
     background-color: #fff;
 }
 
+#header{
+    width:100%;
+    clear:both;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index: 10;
+}
+
+.center{
+    margin: 0 auto;
+    width:960px;
+}
+
 #content{
     background-color: #fff;
     border: 1px solid #ddd;
@@ -66,12 +67,6 @@ a:visited{
     margin: 0 auto;
     width:910px;
     z-index: 1;
-}
-
-.clearfix::after{
-    display: block;
-    clear: both;
-    content: "";
 }
 
 #footer{
@@ -85,6 +80,64 @@ a:visited{
     z-index: 10;
     padding-top: 10px;
     height:25px;
+}
+
+@media only screen and (max-width:980px){
+
+    .center{
+        width:740px;
+    }
+
+    #content{
+        width:740px;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .center{
+        width:620px;
+    }
+
+    #content{
+        width:620px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .center{
+        width:90%;
+    }
+
+    #content{
+        width:90%;
+        top:10px;
+    }
+
+    #header{
+        position:static;
+    }
+
+    #headerName{
+        width:90%;
+        text-align: center;
+        clear: both;
+    }
+
+    #menu{
+        float:left;
+        top:0px;
+        position: relative;
+        text-align: center;
+        margin:5px auto;
+        width:90%;
+    }
+}
+
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: "";
 }
 
 .formItem{
