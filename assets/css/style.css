@@ -85,22 +85,22 @@ a:visited{
 @media only screen and (max-width:980px){
 
     .center{
-        width:740px;
+        width:710px;
     }
 
     #content{
-        width:740px;
+        width:710px;
     }
 }
 
 @media only screen and (max-width:768px){
 
     .center{
-        width:620px;
+        width:590px;
     }
 
     #content{
-        width:620px;
+        width:590px;
     }
 }
 
